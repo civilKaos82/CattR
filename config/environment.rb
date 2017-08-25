@@ -19,7 +19,22 @@ require 'sinatra'
 require "sinatra/reloader" if development?
 
 require 'erb'
+
+require 'dotenv'
+
+require 'base64'
+require 'uri'
+require 'net/http'
+require 'json'
+require 'awesome_print'
+
 require 'pry-byebug'
+
+require 'hirb'
+
+require 'httparty'
+
+Dotenv.load
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))

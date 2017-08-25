@@ -1,0 +1,10 @@
+<h3>Results for "<%=@search_string%>"</h3>
+<p>
+  <ul>
+    <% @results.each do |result| %>
+      <img src="<%= result %>">
+      <br>
+    <% end %>
+  </ul>
+</p>
+<a href="/">Search for more GIFs!</a>
